@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="platform"
+            type="it.univaq.labprog.piattaformegas.model.Platform" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/layoutLinear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/denominazione"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{platform.denominazione}"
+                    android:textSize="20sp"
+                    tools:text="Denominazione"/>
+
+                <TextView
+                    android:id="@+id/tipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{platform.operatore}"
+                    android:textSize="20sp"
+                    tools:text="Operatore"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</layout>
